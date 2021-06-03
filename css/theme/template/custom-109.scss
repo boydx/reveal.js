@@ -1,0 +1,83 @@
+
+.reveal .title {
+    font-size: $heading1Size;
+}
+
+.reveal h1 {
+    text-shadow: $heading1TextShadow;
+}
+
+.reveal h6 {
+    font-weight: $heading6FontWeight;
+    font-size: $heading6Size;
+}
+
+.reveal h5 {
+    font-family: $blackbikeFont;
+    font-size: $heading6Size;
+    font-weight: normal;
+}
+
+/* UK Colors: 
+                #c7c9c8 light gray 
+                #63666a dark gray
+                #15397f dark blue
+                #009bda light blue
+                #0033a0 official blue
+            */
+
+.revealz::after {
+    content: "";
+    background: url('https://www.outragegis.com/weather/goes16/rgb.jpg') no-repeat fixed center;
+    background-size: cover;
+    opacity: 0.35;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.ll {
+    bottom: 0px;
+    left: 0px;
+    position: absolute;
+    z-index: 200;
+    width: 300px;
+    font-size: 0.4em;
+    margin: 0 0 -50px 10px;
+    font-style: italic;
+    text-align: left;
+}
+
+.left {
+    text-align: left;
+}
+
+.custom-counter {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.custom-counter li {
+    counter-increment: step-counter;
+    margin-bottom: 10px;
+}
+
+.custom-counter li::before {
+    content: counter(step-counter);
+    margin-right: 5px;
+    font-size: 80%;
+    background-color: #ffbb00;
+    color: white;
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 3px;
+}
+
+li {
+    /* list-style-type: "✨ ";  */
+    list-style-image: url('../../../images/map-pin.png');
+}
